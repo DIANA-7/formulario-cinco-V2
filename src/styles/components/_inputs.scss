@@ -1,0 +1,20 @@
+@use "../variables" as v;
+
+@mixin inputs() {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        font-family: v.$font-family;
+        font-size: 1rem;
+        border:0;
+        border-bottom: 1px solid v.$bluegray;
+        padding: 0.5rem 0.3rem;
+        color: v.$darkcolor;
+        cursor: pointer;
+
+       
+
+    }
+
+}

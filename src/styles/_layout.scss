@@ -1,0 +1,51 @@
+@use "./variables" as v;
+
+.container {
+
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-image: v.$container-bg;
+    display: flex;
+    main {
+        background-image: v.$main-bg;
+        box-shadow: 0 60px 80px #00000099, 0 45px 26px rgba(0,0,0,0.14);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 60%;
+        max-width: 550px;
+        margin: 0 auto; 
+        h3{
+            font-family: v.$font-family;
+            color: v.$lightcolor;
+            text-align: center;
+            letter-spacing: 0.4rem;
+            padding: 2rem;
+            font-size: 25px;
+            
+
+        }
+    .faces {
+        display: flex; 
+        justify-content: space-between; 
+        width: 100%;
+        padding: 50px;
+        border-radius: 50%;
+        background: v.$lightcolor;
+        margin-bottom: 10px;
+          
+    }
+    > p {
+        font-family: v.$font-family;
+        font-size: 1rem;
+        font-weight: 300;
+        color:v.$bluegray;
+        text-align: center;
+        cursor: pointer;
+
+
+    }
+
+    
+    }
+}
