@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import RegisterContext from "../context/RegisterContext";   
+
+
 const Start = () => {
+    const { setStep } = useContext(RegisterContext); 
   return (
     <main>
       <h3>GALAXY GAME</h3>
@@ -22,11 +27,16 @@ const Start = () => {
                   <input type="password" id="password" />
                   <p className="error">Password required</p>
               </fieldset>
-              <button type="submit">Enter</button>
-              <div className="forgot">Forgot passoword?</div>
+              <button type="submit">
+                Enter</button>
+              <div className="forgot" onClick={() => {
+                setStep("ForgotPassword");
+                }}>Forgot passoword?</div>
           </form>
       </div>
-      <p>Create new account</p> 
+      <p onClick={() => {
+                setStep("Register");
+                }}>Create new account</p> 
 
     </main>);
 

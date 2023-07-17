@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import RegisterContext from "../context/RegisterContext"; 
+
 const ForgotPassword = () => {
+  const { setStep } = useContext(RegisterContext); 
   return (
     <main>
         <h3>Fogot Password?</h3>
@@ -20,7 +24,9 @@ const ForgotPassword = () => {
              
           </form>
       </div>
-      <p>Sign In</p> 
+      <p onClick={() => {
+                setStep("Start");
+                }}>Sign In</p> 
 
 
     </main>

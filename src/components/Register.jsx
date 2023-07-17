@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import RegisterContext from "../context/RegisterContext";  
+
 const Register = () => {
+  const { setStep } = useContext(RegisterContext); 
   return (
     <main>
         <h3>Register Now!</h3>
@@ -30,7 +34,12 @@ const Register = () => {
             </fieldset> 
         
               <p>Continue pleace</p>
-              <button type="continue">Continue</button>
+              <button type="continue" onClick={() => {
+                setStep("PersonalData1");
+                }}>Continue</button>
+              <button type="continue" onClick={() => {
+                setStep("Start");
+                }}>Back</button>
              
           </form>
       </div>

@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import RegisterContext from "../context/RegisterContext"; 
+
 const PersonalData2 = () => {
+  const { setStep } = useContext(RegisterContext); 
     return (
         <main>
             <h3>Personal Data Part 2</h3>
@@ -23,8 +27,12 @@ const PersonalData2 = () => {
             
                   <p>Continue pleace</p>
                   <div className="continueBack">
-                    <button type="continue">Continue</button>
-                    <button type="Back">Back</button>
+                    <button type="continue" onClick={() => {
+                      setStep("PersonalData3");
+                      }}>Continue</button>
+                          <button type="Back" onClick={() => {
+                      setStep("PersonalData1");
+                      }}>Back</button>
                     </div>
                   
                  

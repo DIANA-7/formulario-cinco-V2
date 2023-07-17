@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import RegisterContext from "../context/RegisterContext";  
+
 const PersonalData3 = () => {
+    const { setStep } = useContext(RegisterContext); 
     return (
         <main>
             <h3>Personal Data Part 3</h3>
@@ -18,21 +22,13 @@ const PersonalData3 = () => {
                       <input type="text" id="hobbie" autoFocus />
                       <p className="error">Required</p>
                 </fieldset>
-                
-                  
     
                   <div className="continueBack">
-                    <button type="Back">Back</button>
+                    <button type="Back" onClick={() => {
+                        setStep("PersonalData2");
+                        }}>Back</button>
                     <button type= "submit">Register</button>
-                    </div>
-                
-                   
-                   
-               
-                
-            
-               
-                  
+                    </div>            
                  
               </form>
           </div>
