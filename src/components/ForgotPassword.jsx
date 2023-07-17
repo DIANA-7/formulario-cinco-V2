@@ -4,7 +4,7 @@ const ForgotPassword = () => {
         <h3>Fogot Password?</h3>
 
         <div className="forgotPassword">
-        <img width="48" height="48" src="https://img.icons8.com/color-glass/48/forgot-password.png" alt="forgot-password"/>
+        <img width="100" height="48" src="https://img.icons8.com/color-glass/48/forgot-password.png" alt="forgot-password"/>
       </div>
      
     
