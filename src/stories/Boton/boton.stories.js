@@ -17,3 +17,17 @@ export const Next = {
         next1: false,
     },
 };
+export const Grande = {
+    args:{
+        label: "Grande",
+        next1: false,
+        size: "grande"
+    },
+};
+export const Medio = {
+    args:{
+        label: "Mediano",
+        next1: true,
+        size: "medio"
+    },
+};
