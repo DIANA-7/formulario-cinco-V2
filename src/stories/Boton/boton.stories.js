@@ -1,9 +1,19 @@
-import boton from "./boton";
+import { Boton } from "./boton";
 
 export default {
-    component:boton,
+    component:Boton,
 };
 
-export const Basic = {
-    
+//stories
+export const Back = {
+    args:{
+        label: "Back",
+        next1: true,
+    },
+};
+export const Next = {
+    args:{
+        label: "Next",
+        next1: false,
+    },
 };
